@@ -183,19 +183,6 @@ class Danfce extends DaCommon
         $this->offline_double = $flag;
     }
 
-    /**
-     * Renderiza o pdf
-     *
-     * @param string $logo
-     * @return string
-     */
-    public function render($logo = '')
-    {
-        $this->monta($logo);
-        //$this->papel = 80;
-        return $this->pdf->getPdf();
-    }
-
     protected function monta(
         $logo = ''
     ) {
